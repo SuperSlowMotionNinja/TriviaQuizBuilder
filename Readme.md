@@ -15,6 +15,10 @@ Instructions:
     - npm install
     - node database-initializer.js
     - node server.js
+- To create a quiz, go to localhost:3000/createquiz
+
+Screenshot of quiz creation:
+![quiz maker](createquiz.png)
 
 Design choices (other than those specified in assignment specs):
 - post /quizzes: request accepts a quiz object of this format (with question object being an object containing at least an _ID key and value):

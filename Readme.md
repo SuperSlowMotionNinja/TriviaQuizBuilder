@@ -3,7 +3,7 @@ Eric Pham, COMP 2406 - Assignment 4: Trivia Quiz Builder
 
 This server utilizes MongoDB to store quizzes and trivia, and allows requests to be made to post quizzes, get questions and get quizzes.
 
-Requests:
+Available Requests:
 
 GET: /questions, /questions/:qID, /createquiz, /quizzes, /quiz/:quizID
 

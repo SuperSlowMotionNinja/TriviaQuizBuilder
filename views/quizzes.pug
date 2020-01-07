@@ -1,0 +1,8 @@
+html
+	head
+		title Quizzes
+body
+	div#main
+		each q in quizzes
+			a(href="/quiz/"+q._id) Creator: #{q.creator}, Tags: #{q.tags}
+			br

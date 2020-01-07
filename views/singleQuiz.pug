@@ -1,0 +1,11 @@
+html
+    head
+        title #{q.creator}'s Quiz
+body
+    div#main
+        h1= q.creator+"'s Quiz"
+        h2= "Tag(s): "+tag
+        h3= "Questions: "
+        each question in q.questions
+            a(href="/questions/"+question._id) !{question.question}
+            br

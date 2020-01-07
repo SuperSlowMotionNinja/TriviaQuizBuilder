@@ -1,0 +1,8 @@
+html
+	head
+		title Question Results
+body
+	div#main
+		each q in questions
+			a(href="/questions/"+q._id) !{q.question}
+			br

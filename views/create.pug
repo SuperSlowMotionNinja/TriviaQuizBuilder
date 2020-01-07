@@ -1,0 +1,36 @@
+html
+	head
+		title Quiz Creator
+
+	body
+		h1 Create Quiz
+		hr
+		h3 Your Quiz
+		p Enter data into the form below and hit 'Save Quiz' to save your quiz.
+		p Name: 
+			input#creator(type="textbox")
+		p Tags: 
+			input#tag(type="textbox")
+		hr
+		h4 Current Quiz Questions:
+		button#remove(type="button") Remove Selected Questions
+		button#submit(type="button") Save Quiz
+		ul#currentQuestions
+			li No questions in quiz.
+		
+		hr
+		h3 Search/Add Questions 
+		p Category: 
+			select#category(onchange="reloadSearch()")
+				option(value="all") All Categories
+				each c in categories
+					option(value=c) #{c}
+		p Difficulty:
+			select#difficulty(onchange="reloadSearch()")
+				option(value="all") All Difficulties
+				each d in difficulties
+						option(value=d) #{d}
+		h4 Question Results:
+		button#add(type="button") Add Selected Questions
+		ul#searchQuestions
+		script(src='client.js')

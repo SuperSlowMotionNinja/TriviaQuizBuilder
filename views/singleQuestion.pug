@@ -1,0 +1,14 @@
+html
+    head
+        title Question
+body
+    div#main
+
+        h2 Question: !{q.question}
+        h2= "Category: "+q.category
+        h2= "Difficulty: "+q.difficulty
+        h4 Correct Answer: !{q.correct_answer}
+        h4= "Incorrect Answers:"
+        ul
+            each answer in q.incorrect_answers
+                li !{answer}
